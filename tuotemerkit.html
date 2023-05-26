@@ -17,16 +17,15 @@
 </head>
 
 <body>
-  <!-- Navigation | Use hamburger menu when window size is under "large", otherwise extends normally -->
+  <!-- Navigation | -> hamburger menu when window size is under "large", otherwise extends normally -->
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">Salon Helmi</a>
-      <!-- Using toggler to set up the hamburger menu button to function with collapsing navbar with id "navi" -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navi">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Using collapse to set up a resposive nav -->
+
       <div class="collapse navbar-collapse" id="navi">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -48,15 +47,17 @@
             <a href="tuotemerkit.html" class="nav-link">Tuotemerkit</a>
           </li>
           <li class="nav-item">
-            <a href="tuotemerkit.html" class="nav-link">Galleria</a>
+            <a href="galleria.html" class="nav-link">Galleria</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="p-5 bg-light">
+  <section class="p-5 bg-light nav-fix-mob">
     <div class="container">
+      <br>
+      <br>
       <h1>Tuotemerkkejä</h1>
       <div class="wrapper">
         <div class="box">
@@ -115,7 +116,7 @@
 
   <!-- Esittely -->
 
-  <section class="p-5">
+  <!-- <section class="p-5">
     <div class="container">
       <div class="grid">
         <div class="item" style="background-image: url(img/tervetuloakuva.jpg)"></div>
@@ -130,6 +131,23 @@
       </div>
     </div>
   </section>
+
+  <section class="p-5 mobile-gallery">
+    <div class="container-fluid">
+      <div>
+        <img class="img-fluid mx-auto d-block" src="img/tervetuloakuva.jpg" alt="">
+      </div>
+      <div>
+        <img class="img-fluid" src="img/tuoli.jpg" alt="">
+      </div>
+      <div>
+        <img class="img-fluid" src="img/kynsihoitoa.jpg" alt="">
+      </div>
+      <div>
+        <img class="img-fluid" src="img/hoitola-wide.jpg" alt="">
+      </div>
+    </div>
+  </section> -->
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

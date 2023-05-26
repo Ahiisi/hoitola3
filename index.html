@@ -21,15 +21,16 @@
 </head>
 
 <body>
-  <!-- Navigation | Use hamburger menu when window size is under "large", otherwise extends normally -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+
+
+  <!-- Navigation | -> hamburger menu when window size is under "large", otherwise extends normally -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">Salon Helmi</a>
-      <!-- Using toggler to set up the hamburger menu button to function with collapsing navbar with id "navi" -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navi">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Using collapse to set up a resposive nav -->
+
       <div class="collapse navbar-collapse" id="navi">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -51,16 +52,16 @@
             <a href="tuotemerkit.html" class="nav-link">Tuotemerkit</a>
           </li>
           <li class="nav-item">
-            <a href="tuotemerkit.html" class="nav-link">Galleria</a>
+            <a href="galleria.html" class="nav-link">Galleria</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Sectioning the website content for semantics, text is centered in small screens and aligned to start with bigger sizes -->
-  <section id="welcome" class="bg-dark text-light p-5 text-center text-sm-start">
+
+  <section id="welcome" class="bg-dark text-light p-5 text-center text-sm-start nav-fix-mob">
     <div class="container">
-      <!-- Setting up flex to apply when window is "medium" or larger. Wanted horizontal when going smaller in screen size -->
+      <br>
       <div class="d-md-flex align-items-center justify-content-between">
         <div>
           <h1 class="decor-color">Tervetuloa Salon Helmeen!</h1>
@@ -159,14 +160,13 @@
         </div>
         <div class="col-md p-5">
           <h2>Löydä perille</h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Necessitatibus repudiandae similique modi, eligendi placeat sunt.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
-            vero eos distinctio illum, porro optio eveniet quisquam quis rerum
-            beatae?
+          <p>Hoitola sijaitsee Märynummella, noin kymmenen minuutin matkan päässä Salon keskustasta. Osoite: Märyntie 5
+            as 10, 25250 Salo</p>
+
+          <p>Hoitola avoinna sopimuksen mukaan. Ajanvaraus numerosta 0405558779. Jos en pääse vastaamaan, soitan sinulle
+            takaisin.</p>
+
+          <p>Tiedustelut hoidoista ja vapaista ajoista voi myös hoitaa sähköpostitse osoitteeseen hoitola@salonhelmi.fi
           </p>
         </div>
       </div>
@@ -179,25 +179,26 @@
         <div class="col-md p-5">
           <h2>Lahjakortti</h2>
           <h5>Hemmottele läheistäsi Salon Helmen lahjakortilla!</h5>
-          <h5>Lahjakortin voi noutaa hoitolasta tai tilata sähköpostitse.</h5>
+          <h5>Lahjakortin voi noutaa hoitolasta tai tilata sähköpostitse osoitteesta hoitola@salonhelmi.fi.</h5>
           <p>Sähköpostilla tilattaessa kortti lähetetään postitse haluamaasi osoitteeseen maksun saavuttua hoitolan
             tilille. Lahjakortin arvoon lisätään 2€:n toimitusmaksu. Ilmoita sähköpostissa haluamasi hoito/käytettävä
             summa ja lahjakortin saajan nimi. Vastauksena saat maksuohjeet. Lahjakortti on voimassa 8kk.</p>
-          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#tilauslomake">
+
+          <!-- Tilauslomake
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#tilauslomake">
             Tilauslomake
           </button>
-
           <div class="modal" id="tilauslomake">
             <div class="modal-dialog modal-xl">
               <div class="modal-content">
 
-                <!-- Modal Header -->
+                Modal Header
                 <div class="modal-header">
                   <h4 class="modal-title">Lahjakortin tilauslomake</h4>
                   <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
 
-                <!-- Modal body -->
+                Modal body
                 <div class="modal-body">
                   <form method="post" action="tilauslomake.php">
                     <div class="mb-2">
@@ -244,14 +245,14 @@
                   </form>
                 </div>
 
-                <!-- Modal footer -->
+                Modal footer
                 <div class="modal-footer">
                   <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sulje</button>
                 </div>
 
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
         <div class="col-md">
           <img class="img-fluid rounded" src="img/lahjakortti-xl.jpg" alt="" />

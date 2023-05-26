@@ -17,16 +17,15 @@
 </head>
 
 <body>
-  <!-- Navigation | Use hamburger menu when window size is under "large", otherwise extends normally -->
+  <!-- Navigation | -> hamburger menu when window size is under "large", otherwise extends normally -->
 
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
     <div class="container">
       <a href="#" class="navbar-brand">Salon Helmi</a>
-      <!-- Using toggler to set up the hamburger menu button to function with collapsing navbar with id "navi" -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navi">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <!-- Using collapse to set up a resposive nav -->
+
       <div class="collapse navbar-collapse" id="navi">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -48,7 +47,7 @@
             <a href="tuotemerkit.html" class="nav-link">Tuotemerkit</a>
           </li>
           <li class="nav-item">
-            <a href="tuotemerkit.html" class="nav-link">Galleria</a>
+            <a href="galleria.html" class="nav-link">Galleria</a>
           </li>
         </ul>
       </div>
@@ -57,8 +56,9 @@
 
   <!-- Esittely -->
 
-  <section class="p-5 bg-dark text-light">
+  <section class="p-5 bg-dark text-light hinnasto-esittely">
     <div class="container">
+      <br>
       <div class="row align-items-center justify-content-between">
         <div class="col-md p-5">
           <h2>Hemmottele läheistäsi Salon Helmen lahjakortilla!</h2>
@@ -69,7 +69,7 @@
 
         </div>
         <div class="col-md">
-          <img class="img-fluid rounded" src="img/lahjakortti.jpg" alt="">
+          <img class="img-fluid rounded" src="img/lahjakortti-xl.jpg" alt="">
         </div>
 
       </div>
@@ -78,7 +78,7 @@
 
   <!-- Tästä alkaa kasvohoidot hinnasto -->
 
-  <section class="px-5 py-2 bg-light">
+  <section class="px-5 py-2 bg-light nav-fix-mob">
     <div class="container">
       <h2 class="p-3">Kasvohoidot</h2>
       <div class="accordion" id="accordionExample">
