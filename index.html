@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Salon Helmi</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation | Use hamburger menu when window size is under "large", otherwise extends normally -->
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">Salon Helmi</a>
+      <!-- Using toggler to set up the hamburger menu button to function with collapsing navbar with id "navi" -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Using collapse to set up a resposive nav -->
+      <div class="collapse navbar-collapse" id="navi">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#welcome" class="nav-link">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#topical" class="nav-link">Ajankohtaista</a>
+          </li>
+          <li class="nav-item">
+            <a href="#location" class="nav-link">Yhteystiedot</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gift" class="nav-link">Lahjakortti</a>
+          </li>
+          <li class="nav-item">
+            <a href="hinnasto.html" class="nav-link">Hinnasto</a>
+          </li>
+          <li class="nav-item">
+            <a href="tuotemerkit.html" class="nav-link">Tuotemerkit</a>
+          </li>
+          <li class="nav-item">
+            <a href="tuotemerkit.html" class="nav-link">Galleria</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Sectioning the website content for semantics, text is centered in small screens and aligned to start with bigger sizes -->
+  <section id="welcome" class="bg-dark text-light p-5 text-center text-sm-start">
+    <div class="container">
+      <!-- Setting up flex to apply when window is "medium" or larger. Wanted horizontal when going smaller in screen size -->
+      <div class="d-md-flex align-items-center justify-content-between">
+        <div>
+          <h1 class="decor-color">Tervetuloa Salon Helmeen!</h1>
+          <p class="my-4 me-5">
+            Tarjoan hoitolassani asiantuntevia kasvo- käsi- jalka- ja
+            vartalaohoitoja ym. Anna itsellesi ja/tai läheisellesi rentouttava
+            hemmotteluhetki rauhoittua ja nauttia kiireettömästä hoidosta.
+            Hoidot suunnitellaan jokaiselle asiakkaalle tarpeiden ja toiveiden
+            mukaan. Salon Helmessä palvelen jokaista asiakasta yhtenä
+            hoitolani helmenä.
+          </p>
+          <p class="my-4 me-5">
+            Hoitola sijaitsee Märynummella, noin kymmenen minuutin matkan
+            päässä Salon keskustasta ja vain parin minuutin päässä Märyn
+            (Halikon) moottoritien liittymästä.
+          </p>
+          <p class="my-4 me-5">
+            Hoitola avoinna sopimuksen mukaan. Jos en pääse vastaamaan, soitan
+            sinulle takaisin.
+          </p>
+        </div>
+        <img class="img-fluid rounded scale-down" style="height: 500px; width: auto" src="img/tervetuloakuva.jpg"
+          alt="welcometext" />
+      </div>
+    </div>
+    <div class="container">
+      <h5 class="text-light pb-3">Tiedustele hoidoista tai varaa aika:</h5>
+      <i class="fa-sharp fa-solid fa-phone-volume fa-xl pe-2"></i>
+      <a class="clear-link" href="tel:+358405558779">0405558779</a>
+      <i class="fa-solid fa-at fa-xl ps-5 pe-1"></i>
+      <a class="clear-link" href="mailto:hoitola@salonhelmi.fi">hoitola@salonhelmi.fi</a>
+    </div>
+  </section>
+
+  <section id="topical" class="p-5">
+    <div class="container">
+      <div class="row text-center g-4">
+        <h2>Ajankohtaista</h2>
+        <div class="col-md">
+          <div class="card h-100 bg-dark text-light">
+            <img src="img/green-peel-face.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <p class="card-text">
+                Tiesitkö, että GREEN PEEL® Fresh Up voidaan tehdä myös
+                kesäisin?
+              </p>
+              <p class="card-text">
+                Siinä missä yrttisyväkuorrinnan vahvempia hoitomuotoja tulee
+                välttää vuoden aurinkoisimpana aikana, kevyin Fresh Up sopii
+                täydelliseksi kaunistajaksi kesän juhlapäiviä varten.
+                Lopputuloksena on kuulas, virkeä ja kirkas iho ilman ikäviä
+                sivuvaikutuksia tai toipumisaikaa.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card h-100">
+            <img src="img/prx.jpg" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5 class="card-title">PRX-T33</h5>
+              <h6 class="card-subtitle">Neulaton biorevitalisaatiohoito</h6>
+              <p class="card-text">
+                PRX-T33 on ainutlaatuinen anti-age -hoitomenetelmä, joka takaa
+                tehokkaat tulokset ilman ei-toivottuja sivuvaikutuksia tai
+                toipumisaikaa. Sopii kaikille ihotyypeille
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card h-100 bg-dark text-light">
+            <div class="card-body">
+              <div class="fb-page" data-href="https://www.facebook.com/salonhelmi?locale=fi_FI" data-tabs="timeline"
+                data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/salonhelmi?locale=fi_FI" class="fb-xfbml-parse-ignore"><a
+                    href="https://www.facebook.com/salonhelmi?locale=fi_FI">Salon Helmi</a></blockquote>
+              </div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location" class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md">
+          <iframe id="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.5793402767108!2d23.036186477383012!3d60.43565102197879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c40ba43981f93%3A0xb2e3e4260d3076b8!2sM%C3%A4ryntie%205%2C%2025250%20Salo!5e0!3m2!1sfi!2sfi!4v1684789805303!5m2!1sfi!2sfi"
+            width="500" height="400" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md p-5">
+          <h2>Löydä perille</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Necessitatibus repudiandae similique modi, eligendi placeat sunt.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+            vero eos distinctio illum, porro optio eveniet quisquam quis rerum
+            beatae?
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gift" class="p-5 bg-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>Lahjakortti</h2>
+          <h5>Hemmottele läheistäsi Salon Helmen lahjakortilla!</h5>
+          <h5>Lahjakortin voi noutaa hoitolasta tai tilata sähköpostitse.</h5>
+          <p>Sähköpostilla tilattaessa kortti lähetetään postitse haluamaasi osoitteeseen maksun saavuttua hoitolan
+            tilille. Lahjakortin arvoon lisätään 2€:n toimitusmaksu. Ilmoita sähköpostissa haluamasi hoito/käytettävä
+            summa ja lahjakortin saajan nimi. Vastauksena saat maksuohjeet. Lahjakortti on voimassa 8kk.</p>
+          <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#tilauslomake">
+            Tilauslomake
+          </button>
+
+          <div class="modal" id="tilauslomake">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Lahjakortin tilauslomake</h4>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form method="post" action="tilauslomake.php">
+                    <div class="mb-2">
+                      <label class="form-label" for="tilaajaNimi">Nimi</label>
+                      <input type="text" id="tilaajaNimi" name="tilaajaNimi" placeholder="Etunumi, Sukunimi"
+                        class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="osoite" class="form-label">Postiosoite:</label>
+                      <input type="text" id="osoite" name="osoite" placeholder="Osoite, postinumero, paikkakunta"
+                        class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="puhnro" class="form-label">Puhelinnumero:</label>
+                      <input type="tel" id="puhnro" name="puhnro" placeholder="+358..." class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="saajaNimi" class="form-label">Lahjakortin saajan nimi:</label>
+                      <input type="text" id="saajaNimi" name="saajaNimi" placeholder="Etunimi, Sukunimi"
+                        class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="valittuHoito" class="form-label">Valittu hoito:</label>
+                      <input type="text" id="valittuHoito" name="valittuHoito"
+                        placeholder="Kirjoita valitsemasi hoito/hoidot" class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="valittuSumma" class="form-label">TAI valittu summa:</label>
+                      <input type="number" id="valittuSumma" name="valittuSumma" placeholder="€" class="form-control">
+                    </div>
+
+                    <div class="mb-2">
+                      <label for="vapaaTeksti" class="form-labe">Lisätietoa:</label>
+                      <textarea id="vapaaTeksti" name="vapaaTeksti" cols="30" rows="10" class="form-control"
+                        placeholder="Viesti hoitolalle..."></textarea>
+                    </div>
+                    <input type="submit" value="Lähetä">
+
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Sulje</button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <img class="img-fluid rounded" src="img/lahjakortti-xl.jpg" alt="" />
+        </div>
+
+        <!-- Lahjakortin tilauslomake
+        <div class="col-md p-5">
+          <form id="lahjakorttiTilaus">
+            <div class="mb-2">
+              <label class="form-label" for="tilaajaNimi">Nimi</label>
+              <input type="text" id="tilaajaNimi" placeholder="Etunumi, Sukunimi" class="form-control">
+            </div>
+
+            <div class="mb-2">
+              <label for="osoite" class="form-label">Postiosoite:</label>
+              <input type="text" id="osoite" placeholder="Osoite, postinumero, paikkakunta" class="form-control">
+            </div>
+
+            <div class="mb-2">
+              <label for="puhnro" class="form-label">Puhelinnumero:</label>
+              <input type="tel" id="puhnro" placeholder="+358..." class="form-control">
+            </div>
+
+            <div class="mb-2">
+              <label for="saajaNimi" class="form-label">Lahjakortin saajan nimi:</label>
+              <input type="text" id="saajaNimi" placeholder="Etunimi, Sukunimi" class="form-control">
+            </div>
+
+            <div class="mb-2">
+              <label for="valittuHoito" class="form-label">Valittu hoito:</label>
+              <input type="text" id="valittuHoito" placeholder="Kirjoita valitsemasi hoito/hoidot" class="form-control">
+            </div>
+
+            <div class="mb-2">
+              <label for="valittuSumma" class="form-label">TAI valittu summa:</label>
+              <input type="number" id="valittuSumma" placeholder="€" class="form-control">
+            </div>
+
+            <div class="mb-2">
+              <label for="vapaaTeksti" class="form-labe">Lisätietoa:</label>
+              <textarea id="vapaaTeksti" cols="30" rows="10" class="form-control"
+                placeholder="Viesti hoitolalle..."></textarea>
+            </div>
+
+
+          </form>
+        </div> -->
+      </div>
+    </div>
+  </section>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fi_FI/sdk.js#xfbml=1&version=v17.0"
+    nonce="2BRCyz7N"></script>
+</body>
+
+</html>

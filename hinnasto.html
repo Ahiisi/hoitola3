@@ -1,0 +1,1024 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Salon Helmi</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation | Use hamburger menu when window size is under "large", otherwise extends normally -->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">Salon Helmi</a>
+      <!-- Using toggler to set up the hamburger menu button to function with collapsing navbar with id "navi" -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Using collapse to set up a resposive nav -->
+      <div class="collapse navbar-collapse" id="navi">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="index.html#welcome" class="nav-link">Etusivu</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#topical" class="nav-link">Ajankohtaista</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#location" class="nav-link">Yhteystiedot</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#gift" class="nav-link">Lahjakortti</a>
+          </li>
+          <li class="nav-item">
+            <a href="hinnasto.html" class="nav-link">Hinnasto</a>
+          </li>
+          <li class="nav-item">
+            <a href="tuotemerkit.html" class="nav-link">Tuotemerkit</a>
+          </li>
+          <li class="nav-item">
+            <a href="tuotemerkit.html" class="nav-link">Galleria</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Esittely -->
+
+  <section class="p-5 bg-dark text-light">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md p-5">
+          <h2>Hemmottele läheistäsi Salon Helmen lahjakortilla!</h2>
+          <p>Lahjakortin voi noutaa hoitolasta tai tilata sähköpostitse.</p>
+          <p>Sähköpostilla tilattaessa kortti lähetetään postitse haluamaasi osoitteeseen maksun saavuttua hoitolan
+            tilille. Lahjakortin arvoon lisätään 2€:n toimitusmaksu. Ilmoita sähköpostissa haluamasi hoito/käytettävä
+            summa ja lahjakortin saajan nimi. Vastauksena saat maksuohjeet. Lahjakortti on voimassa 8kk.</p>
+
+        </div>
+        <div class="col-md">
+          <img class="img-fluid rounded" src="img/lahjakortti.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Tästä alkaa kasvohoidot hinnasto -->
+
+  <section class="px-5 py-2 bg-light">
+    <div class="container">
+      <h2 class="p-3">Kasvohoidot</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Ihonpuhdistus 79€
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Sekaiholle sekä rasvoittuvalle iholle, jossa paljon epäpuhtauksia.</p>
+
+              <p>Alkupuhdistus, höyry, epäpuhtauksien poisto mekaanisesti komedoraudan avulla. Puhdistuksen jälkeen
+                kasvot käydään läpi korkeataajuuslaitteella, joka desinfioi ihoa pintaa syvemmältä ja rauhoittaa ihon
+                punoitusta. Lopuksi rauhoittava naamio, jonka vaikutuksen aikana käsihieronta, seerumi ja hoitovoide.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Täydellinen kasvohoito / Ultraäänipuhdistus 85€
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Hoidon alussa analyysi, jonka aikana valitaan ja sovitaan hoitotapa ja tuotteet.</p>
+
+              <p>Alkupuhdistus, kuorinta / ultraäänikäsittely / mekaaninen puhdistus, hieronta, naamio jonka,
+                vaikutuksen aikana käsihieronta, tehotuote ja hoitovoide.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Nuoriso ihonpuhdistus 60€ (alle 16v).
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Ihonpuhdistus sopii erityisesti nuorelle, jolle on epäpuhtauksia alkanut ilmaantua iholle.</p>
+              <p>Alkupuhdistuksen jälkeen iho höyrytetään ja kuoritaan hellävaraisesti, mekaaninen puhdistus
+                komedoraudan tai ultraäänilaitteen avulla. Puhdistuksen jälkeen kasvot käydään läpi
+                korkeataajuuslaitteella, joka desinfioi ihoa pintaa syvemmältä ja rauhoittaa ihon punoitusta. Lopuksi
+                naamio ja hoitovoide. Sis. Ihonhoidon opastuksen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+              Pikakasvohoito 38€
+            </button>
+          </h2>
+          <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Alkupuhdistus, kuorinta, naamio ja hoitovoide.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+              Kasvolymfa 52€
+            </button>
+          </h2>
+          <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Alkupuhdistus, lymfahieronta, naamio ja hoitovoide.</p>
+              <p>Lymfahieronta poistaa ylimääräistä nestettä kudoksista ja laskee turvotusta. Rentouttaa ja vilkastuttaa
+                aineenvaihduntaa. Sopii kaikille ihotyypeille iästä riippumatta. Myös akne- ja couperosa-iholle
+                rauhoittamaan sekä vanhenevalle iholle lempeästi aktivoimaan, sekä ennen ja jälkeen kauneuskirurgisten
+                toimenpiteiden aktivoimaan kudosten paranemisprosessia.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+              Kasvojen, kaulan ja decolteen hieronta 31€/37€
+            </button>
+          </h2>
+          <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Rentouttava ja elvyttävä hieronta ihoa hoitavalla voiteella.</p>
+              <p>30 min hoito sisältää alkupuhdistuksen ja hieronnan sekä hoitovoiteen</p>
+              <p>45 min hoito sisältää lisäksi kuorinnan tai pidemmän hieronnan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+              Kaula- ja decolteeihon hoito 38€
+            </button>
+          </h2>
+          <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Täsmähoito kaulan ja decoltee -alueen iholle. Kosteuttava, aineenvaihduntaa parantava hoito</p>
+              <p>Sis. puhdistus, kuorinta, kiinteyttävä / kosteuttava ampulli, korkeataajuuskäsittely, hieronta ja
+                naamio.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading8">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+              Silmänympärysihon tehohoito 30€ (kasvohoidon yhteydessä 15€).
+            </button>
+          </h2>
+          <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Silmäryppyjen tehohoito, joka lisää huomattavasti ulkoisen kosteuden määrää iholla.</p>
+              <p>Alkupuhdistus, kaksivaiheinen 1 Month Eye Perfector -imeytyslaite LED-valolla ja mikrovibraatiolla,
+                lymfaattinen silmänympäryshieronta, tehonaamiolaput.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading9">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+              Platinmen -kasvohoito miehille 76€
+            </button>
+          </h2>
+          <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>Hoitaa kosteutta kaipaavaa, punoittavaa ja ärtynyttä ihoa.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading10">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+              Dr. med. Christine Schrammek GREEN PEEL®
+            </button>
+          </h2>
+          <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p>GREEN PEEL® yrttisyväkuorinta on lääketieteellisesti kehitetty, biologinen hoitomenetelmä, joka
+                perustuu luonnosta saataviin kasviainesosiin. Ei sisällä kemikaaleja, haitallisia aineita tai
+                synteettisiä kuorinta-aineita.</p>
+              <p><strong>Classic 345€ (sisältää kaksi kasvohoitoa + kotihoitotuotteet)</strong></p>
+              <p><strong>Energy 135€ (sisältää kotihoitoon ampullit)</strong></p>
+              <p><strong>Fresh Up 95€</strong></p>
+
+              <p>GREEN PEEL® saavuttanut erittäin hyviä tuloksia:</p>
+              <ul>
+                <li>akne</li>
+                <li>akne ym. arvet esim. onnettomuuksista ja palovammoista</li>
+                <li>laajentuneille ihohuokosille, epäpuhtaalle iholle, talikystoille</li>
+                <li>ennenaikaisten juonteiden muodostumiseen ja veltostuneelle iholle</li>
+                <li>ikääntyvälle, auringon vahingoittamalle iholle</li>
+                <li>hyperpigmentaatiosta kärsivälle iholle.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="accordion-item">
+                <h2 class="accordion-header" id="heading12">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    être belle, ihotyypin erikoiskasvohoidot 69-126€
+                  </button>
+                </h2>
+                <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Hoitojen sisällöt vaihtelevat. Tässä listattuna sinulle peruspohja être belle -erikoiskasvohoidoille:</p>
+                    <ul>
+                        <li>Alkupuhdistus</li>
+                        <li>Kuorinta</li>
+                        <li>Hieronta kasvo-, kaula- ja dekolteen alueelle (ei kaikissa)</li>
+                        <li>Ampulli/seerumi</li>
+                        <li>Erikoisnaamio, jonka vaikutusaikana käsihieronta</li>
+                        <li>Seerumi ja hoitovoide.</li>
+                    </ul>
+                   <p>Kaikkiin kasvohoitoihin sisältyy kulmien siistiminen.
+                    être belle- erikoiskasvohoitoihin voi halutessaan lisätä mekaanisen ihonpuhdistuksen (+ 10€).
+                    Asiasta on hyvä mainita aikaa varattaessa, sillä hoitoon tarvitaan tällöin enemmän aikaa.</p>
+                  </div>
+                </div>
+              </div> -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading13">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+              PRX-T33 neulaton biorevitalisaatiohoito, kts. hintaerittely alta.
+            </button>
+          </h2>
+          <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <p><strong>Ensimmäinen hoitokerta 314€, sis. kotihoitotuotteet. Sen jälkeen sarjahoidot 145€/krt.</strong>
+              </p>
+              <p><strong>Ylläpitohoito/yksittäinen hoito 165€, sisältää. kotihoitotuotteet 6:ksi päiväksi.</strong></p>
+
+              <p>PRX-T33 on ainutlaatuinen anti-age -hoitomenetelmä, joka takaa tehokkaat tulokset ilman ei-toivottuja
+                sivuvaikutuksia tai toipumisaikaa. Sopii kaikille ihotyypeille.</p>
+
+              <p>Hoidossa käytettävä PRX-T33-hoitoliuos on CE-merkitty lääkinnällinen laite, joten hoito on tutkitusti
+                turvallinen iholle. Kansainvälisesti patentoitu koostumus sisältää 33 % TCA-happoa, vetyperoksidia ja 5
+                % Kojic-happoa.</p>
+
+              <p>Hoito sopii kaikille ihotyypeille ympäri vuoden, sillä se ei herkistä ihoa valolle. Nopea hoitomuoto
+                vie vain 30 minuuttia ajastasi. Tulokset: vähentää ryppyjen määrää ja syvyyttä, sekä kiinteyttää ihoa
+                välittömästi, syväkosteuttaa ihoa ja stimuloi dermistä tuottamaan uutta kollageenia sekä uudistamaan
+                soluja. Tulokset näkyvät ja tuntuvat välittömästi.</p>
+
+              <p>Hoito toteutetaan sarjahoitona, yleensä 4-6 krt viikottain riippuen ihotyypistä, kunnosta ja halutuista
+                tuloksista. Ihon kunto paranee asteittain jokaisella hoitokerralla, tulokset ovat yksilöllisiä.
+                Sarjahoidolla saadaan pitkäaikaisia jopa 6-9 kk pysyviä tuloksia, ja sen vaikutuksia voidaan ylläpitää
+                joka toinen kuukausi tehtävällä hoidolla. Ensimmäinen hoito sisältää kotihoitotuotteet joita käytetään
+                sarjahoitokertojen välissä.</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="ps-2">**SARJAHOIDOT -15% alennus yhteishinnasta, väh. 3 käyntikertaa noin viikon välein, maksu
+          kerralla</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tästä alkaa Etre belle erikoishoitojen hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">être belle -kasvohoidot</h2>
+      <div class="accordion" id="etreHinnasto">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="etre1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#etreHoito1" aria-expanded="true" aria-controls="etreHoito1">
+              être belle, ihotyypin erikoiskasvohoidot 69-126€
+            </button>
+          </h2>
+          <div id="etreHoito1" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#etreHinnasto">
+            <div class="accordion-body">
+              <p>Hoitojen sisällöt vaihtelevat. Tässä listattuna sinulle peruspohja être belle -erikoiskasvohoidoille:
+              </p>
+              <ul>
+                <li>Alkupuhdistus</li>
+                <li>Kuorinta</li>
+                <li>Hieronta kasvo-, kaula- ja dekolteen alueelle (ei kaikissa)</li>
+                <li>Ampulli/seerumi</li>
+                <li>Erikoisnaamio, jonka vaikutusaikana käsihieronta</li>
+                <li>Seerumi ja hoitovoide.</li>
+              </ul>
+              <p>Kaikkiin kasvohoitoihin sisältyy kulmien siistiminen.
+                être belle- erikoiskasvohoitoihin voi halutessaan lisätä mekaanisen ihonpuhdistuksen (+ 10€).
+                Asiasta on hyvä mainita aikaa varattaessa, sillä hoitoon tarvitaan tällöin enemmän aikaa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="etre2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#etreHoito2" aria-expanded="true" aria-controls="etreHoito2">
+              Energy kasvohoidot 69/112€
+            </button>
+          </h2>
+          <div id="etreHoito2" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#etreHinnasto">
+            <div class="accordion-body">
+              <p>Väsynyt, eloton ja energiaa kaipaava iho</p>
+              <p>Kirkastaa ihoa, korjaa ympäristötekijöiden aiheuttamia vahinkoja, kiinteyttää ja kosteuttaa. Kalliimman
+                hoidon kesto ja sisältö eri. Sis. lisäksi erikoisnaamion, kaksi hierontaa sekä C-vitamiini ampullin
+                kotiin.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="etre3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#etreHoito3" aria-expanded="true" aria-controls="etreHoito3">
+              Hyaluronic³ hyaluronihappohoito 82/100€
+            </button>
+          </h2>
+          <div id="etreHoito3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#etreHinnasto">
+            <div class="accordion-body">
+              <p>Sekaiho, kuiva iho sekä ikääntyvä iho.</p>
+              <p>Vaikutus: Hyaluronic³ kolmiteho: kohotus, kiinteytys ja sileys. Syväkosteuttaa, nuorekkaampi iho.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="etre4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#etreHoito4" aria-expanded="true" aria-controls="etreHoito4">
+              Purity Intense kasvohoidot 79€
+            </button>
+          </h2>
+          <div id="etreHoito4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#etreHinnasto">
+            <div class="accordion-body">
+              <p>Akne iho, rasvoittuva iho, sekä sekaiho.</p>
+              <p>Puhdistaa ihoa ja ehkäisee uusien tulehdusten syntyä sekä rauhoittaa ärtynyttä ihoa.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="etre5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#etreHoito5" aria-expanded="true" aria-controls="etreHoito5">
+              Sensiplus+ silkkihoito 73€/99€
+            </button>
+          </h2>
+          <div id="etreHoito5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#etreHinnasto">
+            <div class="accordion-body">
+              <p>Kuivalle, ärtyneelle ja herkistyneelle iholle/couperosa iholle</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="etre6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#etreHoito6" aria-expanded="true" aria-controls="etreHoito6">
+              Time Control anti-age 105€
+            </button>
+          </h2>
+          <div id="etreHoito6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+            data-bs-parent="#etreHinnasto">
+            <div class="accordion-body">
+              Aikuisen ihon kiinteyttävä tehohoito.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Tästä alkaa ripset ja kulmat hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">Ripset ja kulmat</h2>
+      <div class="accordion" id="ripsetKulmat">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRipset1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ripset1"
+              aria-expanded="true" aria-controls="ripset1">
+              Ripsien ja kulmien kestovärjäys ja kulmien muotoilu 30€
+            </button>
+          </h2>
+          <div id="ripset1" class="accordion-collapse collapse" aria-labelledby="headingRipset1"
+            data-bs-parent="#ripsetKulmat">
+            <div class="accordion-body">
+              <p>Muotoilu voidaan toteuttaa joko pinseteillä nyppimällä tai vahalla. Vaha käsittelystä on hyvä mainita
+                hoitovarauksen yhteydessä, jotta voimme huomioida sen valmistellessamme hoitoa. Kaikki kasvohoidot
+                sisältävät kulmien kevyen siistimisen, mutta varsinainen muotoilu on tilattavissa erikseen myös
+                kasvohoidon yhteyteen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRipset2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ripset2"
+              aria-expanded="false" aria-controls="ripset2">
+              Ripsien kestovärjäys 16€
+            </button>
+          </h2>
+          <div id="ripset2" class="accordion-collapse collapse" aria-labelledby="headingRipset2"
+            data-bs-parent="#ripsetKulmat">
+            <div class="accordion-body">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRipset3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ripset3"
+              aria-expanded="false" aria-controls="ripset3">
+              Kulmien muotoilu + kestovärjäys 16€
+            </button>
+          </h2>
+          <div id="ripset3" class="accordion-collapse collapse" aria-labelledby="headingRipset3"
+            data-bs-parent="#ripsetKulmat">
+            <div class="accordion-body">
+              <p>Muotoilu voidaan toteuttaa joko pinseteillä nyppimällä tai vahalla. Vaha käsittelystä on hyvä mainita
+                hoitovarauksen yhteydessä, jotta voimme huomioida sen valmistellessamme hoitoa. Kaikki kasvohoidot
+                sisältävät kulmien kevyen siistimisen, mutta varsinainen muotoilu on tilattavissa erikseen myös
+                kasvohoidon yhteyteen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRipset4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ripset4"
+              aria-expanded="false" aria-controls="ripset4">
+              Kulmien muotoilu tai väri 10€
+            </button>
+          </h2>
+          <div id="ripset4" class="accordion-collapse collapse" aria-labelledby="headingRipset4"
+            data-bs-parent="#ripsetKulmat">
+            <div class="accordion-body">
+              <p>Muotoilu voidaan toteuttaa joko pinseteillä nyppimällä tai vahalla. Vaha käsittelystä on hyvä mainita
+                hoitovarauksen yhteydessä, jotta voimme huomioida sen valmistellessamme hoitoa. Kaikki kasvohoidot
+                sisältävät kulmien kevyen siistimisen, mutta varsinainen muotoilu on tilattavissa erikseen myös
+                kasvohoidon yhteyteen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingRipset5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ripset5"
+              aria-expanded="false" aria-controls="ripset5">
+              Ripsien kestotaivutus + väri 45/60€
+            </button>
+          </h2>
+          <div id="ripset5" class="accordion-collapse collapse" aria-labelledby="headingRipset5"
+            data-bs-parent="#ripsetKulmat">
+            <div class="accordion-body">
+              <p>Ripsipermanentilla saadaan ripset taipumaan pysyvästi ylöspäin, mikä avaa katsetta ja tekee silmistä
+                näyttävät ilman meikkiäkin.
+                Ripsipermanentti sopii sekä lyhyille että pitkille ripsille ja se kestää ripsissä noin 4 viikkoa eli
+                kunnes ripset luonnollisesti uusiutuvat. Uutta permanenttia ei suositella ennen kuin edellinen on
+                kasvanut pois.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Tästä alkaa käsihoitojen hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">Käsien hoito</h2>
+      <div class="accordion" id="kHoito">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKasi1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kasi1"
+              aria-expanded="true" aria-controls="kasi1">
+              Perus käsihoito (sis. lakkauksen) 41€
+            </button>
+          </h2>
+          <div id="kasi1" class="accordion-collapse collapse" aria-labelledby="headingKasi1" data-bs-parent="#kHoito">
+            <div class="accordion-body">
+              <p>Kestolakkauksella +19€</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKasi3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kasi3"
+              aria-expanded="true" aria-controls="kasi3">
+              Parafiinipakkaus muun hoidon yhteydessä 15€
+            </button>
+          </h2>
+          <div id="kasi3" class="accordion-collapse collapse" aria-labelledby="headingKasi3" data-bs-parent="#kHoito">
+            <div class="accordion-body">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKasi4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kasi4"
+              aria-expanded="true" aria-controls="kasi4">
+              Helmen hemmottelu käsille 60€
+            </button>
+          </h2>
+          <div id="kasi4" class="accordion-collapse collapse" aria-labelledby="headingKasi4" data-bs-parent="#kHoito">
+            <div class="accordion-body">
+              <p>Tämä hemmotteluhoito on kokonaisvaltainen hoito käsille ja kynsille. Siihen kuuluu kynsien ja
+                kynsinauhojen hoito, käsien hellävarainen merisuolapohjainen kuorinta, rentouttava pitkä hieronta ihoa
+                hoitavalla öljyllä, tämän jälkeen käsiin laitetaan kosteuttava ja pehmittävä naamio. Käsien ihosta tulee
+                pehmeä ja hoidettu. Hoidon päätteeksi kynnet lakataan.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKasi5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kasi5"
+              aria-expanded="true" aria-controls="kasi5">
+              Käsien, kuorinta, hieronta ja naamio käsille 28€
+            </button>
+          </h2>
+          <div id="kasi5" class="accordion-collapse collapse" aria-labelledby="headingKasi5" data-bs-parent="#kHoito">
+            <div class="accordion-body">
+              <p>Hellävarainen merisuolapohjainen kuorinta, rentouttava hieronta ihoa hoitavalla öljyllä. Lopuksi
+                kosteuttava ja pehmittävä naamio joka hellii käsien ihoa.</p>
+              <p>Muun hoidon yhteydessä 20€</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKasi2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kasi2"
+              aria-expanded="true" aria-controls="kasi2">
+              Käsihieronta 20€
+            </button>
+          </h2>
+          <div id="kasi2" class="accordion-collapse collapse" aria-labelledby="headingKasi2" data-bs-parent="#kHoito">
+            <div class="accordion-body">
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Tästä alkaa kynsien hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">Kynsien hoito</h2>
+      <div class="accordion" id="kynsiHoito">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKynsi1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kynsi1"
+              aria-expanded="true" aria-controls="kynsi1">
+              Kestolakkaus (yksivärinen) 35€
+            </button>
+          </h2>
+          <div id="kynsi1" class="accordion-collapse collapse" aria-labelledby="headingKynsi1"
+            data-bs-parent="#kynsiHoito">
+            <div class="accordion-body">
+              <p>Kestolakkauksen poisto 1€/kynsi</p>
+              <p>Siisti ja pitkäkestoinen lakkaus värillisellä geelilakalla. Pysyvyys noin 2-4 viikkoa, riippuen oman
+                kynnen laadusta ja olosuhteista.
+                Cuccio Veneer Triple Pigmentation Technology - erityinen kolminkertainen pigmentointi takaa
+                ainutlaatuisen peittävyyden, uskomattoman kiillon ja ennenkokemattoman kestävyyden.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingKynsi2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kynsi2"
+              aria-expanded="true" aria-controls="kynsi2">
+              Sormenkynsien leikkuu tai lakkaus 15€
+            </button>
+          </h2>
+          <div id="kynsi2" class="accordion-collapse collapse" aria-labelledby="headingKynsi2"
+            data-bs-parent="#kynsiHoito">
+            <div class="accordion-body">
+              <p>Kun kynsien leikkaaminen on itselle hankalaa. Tarvittaessa myös kynsien ohennus lisämaksusta.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Tästä alkaa jalkahoitojen hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">Jalkahoidot</h2>
+      <div class="accordion" id="jalkaHoito">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka1"
+              aria-expanded="true" aria-controls="jalka1">
+              Perusjalkahoito 54€
+            </button>
+          </h2>
+          <div id="jalka1" class="accordion-collapse collapse" aria-labelledby="headingJalka1"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+              <p>Kesto 60 min.</p>
+              <p>Sis. kylvetyksen, kovettumien poiston, kynsien ja kynsinauhojen huoltamisen.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka2"
+              aria-expanded="true" aria-controls="jalka2">
+              Täydellinen jalkahoito 65€
+            </button>
+          </h2>
+          <div id="jalka2" class="accordion-collapse collapse" aria-labelledby="headingJalka2"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+              <p> Kesto 90 min.</p>
+              <p>Sis. kylvetyksen, kovettumien poiston, kynsien ja kynsinauhojen huoltamisen, hieronnan sekä kynsien
+                lakkauksen.</p>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka3"
+              aria-expanded="true" aria-controls="jalka3">
+              Varpaan kynsien leikkaus/ohennus 22€
+            </button>
+          </h2>
+          <div id="jalka3" class="accordion-collapse collapse" aria-labelledby="headingJalka3"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+              <p>Varpaan kynsien leikkaus TAI ohennus (15 -30 min.)</p>
+              <p>Varpaan kynsien leikkaus JA ohennus (30-60 min.)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka4"
+              aria-expanded="true" aria-controls="jalka4">
+              Helmi hemmottelu -jalkahoito 99€
+            </button>
+          </h2>
+          <div id="jalka4" class="accordion-collapse collapse" aria-labelledby="headingJalka1"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+              <p>Kesto 120 min.</p>
+              <p>Hemmotteleva Helmi -jalkahoito on kokonaisvaltainen erikoisjalkahoito. Hoito alkaa jalkojen
+                aromakylvyllä, jota seuraa hellävarainen suolakuorinta, jalkojen kevyt raspaus sekä kynsien ja
+                kynsinauhojen hoito. Seuraavaksi saat nauttia pitkästä puolen tunnin jalkahieronnasta aromaattisella
+                öljyllä ja lämpimillä hierontakivillä. Hoito viimeistellään jalkojen ihoa pehmittävällä naamiolla.
+                Jalkojen nauttiessa naamiosta, kädet saavat kyynärpäihin asti ulottuvan hieronnan aromaattisella
+                öljyllä.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka5"
+              aria-expanded="true" aria-controls="jalka5">
+              Jalkakylpy + klassinen jalkahieronta 35€
+            </button>
+          </h2>
+          <div id="jalka5" class="accordion-collapse collapse" aria-labelledby="headingJalka5"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+              <p>Kesto 45 min.</p>
+              <p>Rentouttava hoito väsyneille jaloille. Hoito alkaa jalkakylvyllä jonka jälkeen jalkaterien ja säärten
+                hieronta klassisen hieronnan ottein.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka6"
+              aria-expanded="true" aria-controls="jalka6">
+              Vyöhyketerapeuttinen jalkahieronta 50€
+            </button>
+          </h2>
+          <div id="jalka6" class="accordion-collapse collapse" aria-labelledby="headingJalka6"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingJalka6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#jalka6"
+              aria-expanded="true" aria-controls="jalka6">
+              Jalkahoidon yhteyteen mahdollista lisätä:
+            </button>
+          </h2>
+          <div id="jalka6" class="accordion-collapse collapse" aria-labelledby="headingJalka6"
+            data-bs-parent="#jalkaHoito">
+            <div class="accordion-body">
+              <ul>
+                <li>Kuorinta ja naamio jaloille 15€</li>
+                <li>Parafiinipakkaus 15€</li>
+                <li>Kestolakkaus 15€</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Tästä alkaa vartalohoidot ja hieronnat hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">Vartalohoidot / hieronnat</h2>
+      <div class="accordion" id="vartaloHoito">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVartalo2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#vartalo2" aria-expanded="true" aria-controls="vartalo2">
+              Intialainen päähieronta 45€
+            </button>
+          </h2>
+          <div id="vartalo2" class="accordion-collapse collapse" aria-labelledby="headingVartalo2"
+            data-bs-parent="#vartaloHoito">
+            <div class="accordion-body">
+              <p>Intialainen päähieronta on vuosituhansia vanha, hoitomenetelmä. Hoito muodostuu sarjasta
+                hierontaliikkeitä, joilla käsitellään hartiaseutu, olkavarret, pää ja kasvot, niska sekä kallonpohjan
+                lihakset. Olo on hoidon jälkeen ihanan rentoutunut ja rauhallinen.</p>
+              <p>Päähieronnalla voidaan saadaan apua mm. päänsärkyyn, lihasjännityksiin, silmien rasituksiin, stressiin,
+                unettomuuteen, hius- ja päänahan ongelmiin, verenkierron paranemiseen. Hoidolla voi helpottaa myös
+                leukanivelten kiputilat, kasvosäryt, virheellinen purenta joka pahimmissa tapauksissa aiheuttaa
+                tinnitystä sekä niskan särkyä</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVartalo3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#vartalo3" aria-expanded="true" aria-controls="vartalo3">
+              Kuumakivihieronta alk. 55€
+            </button>
+          </h2>
+          <div id="vartalo3" class="accordion-collapse collapse" aria-labelledby="headingVartalo3"
+            data-bs-parent="#vartaloHoito">
+            <div class="accordion-body">
+              <p>Hoidossa yhdistyvät käsittely kuumilla ja suloisen siloisilla basalttikivillä sekä lempeät käsin
+                tehtävät hierontaotteet. Kuumat kivet yhdessä hierovien liikkeiden kanssa saavat aikaan syvän rentouden
+                tunteen. Hoidossa väliaineena öljy, joka pehmittää ja ravitsee kuivaa ja karheaa ihoa.</p>
+              <ul>
+                <li>45min, 55€</li>
+                <li>60min, 64€</li>
+                <li>90min, 79€</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="accordion-item">
+              <h2 class="accordion-header" id="headingVartalo4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vartalo4" aria-expanded="true" aria-controls="vartalo4">
+                    Käsihieronta 20€
+                </button>
+              </h2>
+              <div id="vartalo4" class="accordion-collapse collapse" aria-labelledby="headingVartalo4" data-bs-parent="#vartaloHoito">
+                <div class="accordion-body">
+                    <p>Muotoilu voidaan toteuttaa joko pinseteillä nyppimällä tai vahalla. Vaha käsittelystä on hyvä mainita hoitovarauksen yhteydessä, jotta voimme huomioida sen valmistellessamme hoitoa. Kaikki kasvohoidot sisältävät kulmien kevyen siistimisen, mutta varsinainen muotoilu on tilattavissa erikseen myös kasvohoidon yhteyteen.</p>
+                </div>
+              </div>
+            </div> -->
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVartalo5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#vartalo5" aria-expanded="true" aria-controls="vartalo5">
+              Selän ihonpuhdistus 61€
+            </button>
+          </h2>
+          <div id="vartalo5" class="accordion-collapse collapse" aria-labelledby="headingVartalo5"
+            data-bs-parent="#vartaloHoito">
+            <div class="accordion-body">
+              <p>Hoito tehdään samalla periaatteella kuin kasvojen alueelle tehty ihonpuhdistus.</p>
+              <p>Sis. puhdistuksen, kuorinnan, höyrytyksen sekä mekaanisen epäpuhtauksien poiston ja naamion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Tästä alkaa vahaukset ym hinnasto -->
+
+  <section class="px-5 bg-light">
+    <div class="container">
+      <h2 class="p-3">Vahaus / sokerointi</h2>
+      <div class="accordion" id="vahaHoito">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha1"
+              aria-expanded="true" aria-controls="vaha1">
+              Sääret/käsivarret 29€/35€
+            </button>
+          </h2>
+          <div id="vaha1" class="accordion-collapse collapse" aria-labelledby="headingVaha1"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <p>Kesto 30 min.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha2"
+              aria-expanded="true" aria-controls="vaha2">
+              Bikinirajat 27€
+            </button>
+          </h2>
+          <div id="vaha2" class="accordion-collapse collapse" aria-labelledby="headingVaha2"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <p>Kesto 30 min.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha3">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha3"
+              aria-expanded="true" aria-controls="vaha3">
+              Reidet ja sääret 49€/59€
+            </button>
+          </h2>
+          <div id="vaha3" class="accordion-collapse collapse" aria-labelledby="headingVaha3"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <p>Kesto 60 min.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha4">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha4"
+              aria-expanded="true" aria-controls="vaha4">
+              Kainalot 15€
+            </button>
+          </h2>
+          <div id="vaha4" class="accordion-collapse collapse" aria-labelledby="headingVaha4"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <p>Kesto 30 min.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha5">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha5"
+              aria-expanded="true" aria-controls="vaha5">
+              Ylähuuli/leuka/kaula/posket 10€
+            </button>
+          </h2>
+          <div id="vaha5" class="accordion-collapse collapse" aria-labelledby="headingVaha5"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <p>Kesto 15 min.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha6">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha6"
+              aria-expanded="true" aria-controls="vaha6">
+              Selkä/Rinta 60€
+            </button>
+          </h2>
+          <div id="vaha6" class="accordion-collapse collapse" aria-labelledby="headingVaha6"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <p>Kesto 30-60 min.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingVaha7">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#vaha7"
+              aria-expanded="true" aria-controls="vaha7">
+              Hyödyllistä ja tärkeää lisätietoa vahauksesta:
+            </button>
+          </h2>
+          <div id="vaha7" class="accordion-collapse collapse" aria-labelledby="headingVaha7"
+            data-bs-parent="#vahaHoito">
+            <div class="accordion-body">
+              <h5>Karvanpoisto Skin Candy -sokerilla:</h5>
+              <ul>
+                <li>on luonnollista, hellävaraista ja turvallista</li>
+                <li>sopii kaikenlaisille karvoille ja ihoille</li>
+                <li>on ihoa hoitavaa -kuorii iholta kuolleet ihosolut ja xylitol kosteuttaa ihoa</li>
+                <li>säännöllisesti käytettynä heikentää karvankasvua</li>
+                <li>tukee kotimaista yrittäjyyttä, kotimainen tuotemerkki!</li>
+              </ul>
+              <h5>Karvanpoisto vahalla</h5>
+              <p>Ihokarvojen poisto tapahtuu turvallisesti ja hygieenisesti lämminvahalla. <br>
+                Vahaus poistaa karvat noin 4 viikoksi, jonka jälkeen ne kasvavat takaisin yleensä heikompina ja
+                harvempina.</p>
+              <h5>Ennen karvanpoistoa</h5>
+              <ul>
+                <li>Älä kuori ihoa kahteen päivään ennen hoitoon tulemista</li>
+                <li>Älä kosteuta käsiteltävää ihoa samana päivänä kun tulet hoitoon</li>
+                <li>Älä lyhennä itse pitkää karvaa ennen hoitoon tuloa</li>
+                <li>Karvojen tulisi olla vähintään noin 3 mm pitkiä kun tulet karvanpoistoon. Jos olet aikaisemmin
+                  sheivannut karvoja, kasvata niitä ennen hoitoa noin 1-2 viikkoa</li>
+              </ul>
+              <h5>Karvanpoiston jälken</h5>
+              <ul>
+                <li>Vältä aurinkoa, saunaa ja hikoilua 12 tuntiin, suihkussa voit käydä normaalisti</li>
+                <li>Vältä kosmetiikkatuotteiden käyttöä 12 tuntiin</li>
+                <li>Vältä tiukkoja, hankaavia vaatteita hoidon jälkeen</li>
+                <li>Mikäli iho punoittaa, käytä rauhoittavaa voidetta</li>
+                <li>Kosteuta ihoa päivittäin ja kuori 1-2 kertaa viikossa, näin estät sisäänkasvaneet karvat</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
